@@ -8,15 +8,34 @@
 </head>
 <body>
 
-  <script>
-    let name = 'Kevin'
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-    function greet(){
+  <script>
+
+    
+
+    let my_name = 'Kevin';
+
+    function greet(name){
       console.log(`Howdy ${name}`);
     }
   
-    //greet()
-  
+    greet("nene")
+
+
+    function for_each_in(array, instructions) {
+        instructions();
+    }
+
+    let fruits = ["apples", "oranges", "bananas", "pears"];
+
+    for_each_in(fruits, function() {
+      for (let i = 0; i < fruits.length; i++) {
+        console.log(`I like ${fruits[i]}`);
+      } 
+    });
+
+
   </script>
   
 </body>
